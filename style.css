@@ -1,0 +1,195 @@
+/* ========================
+   GENERAL STYLES
+======================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+/* ========================
+   NAVIGATION
+======================== */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #e0f0ff; /* powder blue */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .logo img {
+    height: 50px;
+    width: auto;
+    display: inline-block;
+}
+
+nav .site-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #003366;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0055a5;
+}
+
+/* ========================
+   HERO SECTION
+======================== */
+.hero {
+    height: 80vh;
+    background-color: #f0f8ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #003366;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ========================
+   SECTIONS
+======================== */
+section {
+    padding: 60px 50px;
+}
+
+section h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+section h3 {
+    color: #0055a5;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+/* ========================
+   SOCIAL LINKS
+======================== */
+.socials {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.socials li a {
+    text-decoration: none;
+    color: #0055a5;
+    font-weight: bold;
+}
+
+.socials li a:hover {
+    text-decoration: underline;
+}
+
+/* ========================
+   DONATE BUTTON
+======================== */
+.donate-btn {
+    display: inline-block;
+    background-color: #0055a5;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.donate-btn:hover {
+    background-color: #003366;
+}
+
+/* ========================
+   FOOTER
+======================== */
+footer {
+    background-color: #e0f0ff;
+    text-align: center;
+    padding: 20px;
+    color: #1a1a1a;
+    font-size: 0.9rem;
+}
+
+/* ========================
+   RESPONSIVE DESIGN
+======================== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+}
