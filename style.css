@@ -138,22 +138,66 @@ ol li {
 /* ========================
    DONATE BUTTON
 ======================== */
-.donate-btn {
-    display: inline-block;
-    background-color: #0055a5;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 20px;
-    transition: background-color 0.3s ease;
+.donate-section-wrapper {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 600px;
 }
 
-.donate-btn:hover {
+.toggle-btn {
     background-color: #003366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
 }
 
+.toggle-btn:hover {
+    background-color: #0055a5;
+}
+
+/* Collapsible panel */
+.donate-panel {
+    background-color: #f0f8ff; /* powder blue */
+    border-radius: 10px;
+    overflow: hidden;
+    max-height: 0; /* collapsed by default */
+    transition: max-height 0.4s ease;
+}
+
+/* Panel content */
+.account-details {
+    padding: 30px 20px;
+}
+
+.account-details p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.account-details button {
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.account-details button:hover {
+    background-color: #0055a5;
+}
+
+.note {
+    font-size: 0.95rem;
+    margin-top: 20px;
+    color: #333;
+}.donate-btn {
 /* ========================
    FOOTER
 ======================== */
@@ -192,4 +236,5 @@ footer {
     .hero h1 {
         font-size: 1.5rem;
     }
+
 }
