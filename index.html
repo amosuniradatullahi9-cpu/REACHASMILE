@@ -16,7 +16,21 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#donate">Donate</a></li>
+            <section id="donate" class="donate-section-wrapper">
+    <h2>Support Reach A Smile 💙</h2>
+    <button class="toggle-btn" onclick="toggleAccount()">Show Account Details</button>
+
+    <div class="donate-panel" id="donate-panel">
+        <div class="account-details">
+            <p><strong>Bank:</strong> Moniepoint MFB</p>
+            <p><strong>Account Name:</strong> Amosun Iradatullahi</p>
+            <p><strong>Account Number:</strong> <span id="account-number">6599015800</span></p>
+            <button onclick="copyAccount()">Copy Account Number</button>
+        </div>
+    </div>
+
+    <p class="note">Your support helps us bring smiles to children! 😁✨</p>
+</section>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
@@ -74,4 +88,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
