@@ -1,240 +1,108 @@
-/* ========================
-   GENERAL STYLES
-======================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #ffffff;
-    color: #1a1a1a;
-    line-height: 1.6;
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
 }
 
-/* ========================
-   NAVIGATION
-======================== */
+/* Navigation */
 nav {
+    background: #0d3b66;
+    color: white;
     display: flex;
     justify-content: space-between;
+    padding: 15px 20px;
     align-items: center;
-    padding: 15px 50px;
-    background-color: #e0f0ff; /* powder blue */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-nav .logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-nav .logo img {
-    height: 50px;
-    width: auto;
-    display: inline-block;
-}
-
-nav .site-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #003366;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 15px;
 }
 
-nav ul li a {
+nav a {
+    color: white;
     text-decoration: none;
-    color: #1a1a1a;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    font-size: 14px;
 }
 
-nav ul li a:hover {
-    color: #0055a5;
-}
-
-/* ========================
-   HERO SECTION
-======================== */
+/* Hero */
 .hero {
-    height: 80vh;
-    background-color: #f0f8ff;
+    min-height: 80vh;
+    background: linear-gradient(to right, #cfe8f7 50%, #ffffff 50%);
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 .hero h1 {
-    font-size: 2.5rem;
-    color: #003366;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-/* ========================
-   SECTIONS
-======================== */
-section {
-    padding: 60px 50px;
-}
-
-section h2 {
-    color: #003366;
-    margin-bottom: 20px;
-}
-
-section h3 {
-    color: #0055a5;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-section p {
+    font-size: 28px;
+    color: #0d3b66;
     margin-bottom: 15px;
 }
 
-ol {
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-ol li {
-    margin-bottom: 10px;
-}
-
-/* ========================
-   SOCIAL LINKS
-======================== */
-.socials {
-    display: flex;
-    gap: 15px;
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-}
-
-.socials li a {
-    text-decoration: none;
-    color: #0055a5;
-    font-weight: bold;
-}
-
-.socials li a:hover {
-    text-decoration: underline;
-}
-
-/* ========================
-   DONATE BUTTON
-======================== */
-.donate-section-wrapper {
+/* Sections */
+.section {
+    padding: 60px 20px;
     text-align: center;
-    margin: 40px auto;
-    max-width: 600px;
 }
 
+.light {
+    background: #cfe8f7;
+}
+
+.white {
+    background: #ffffff;
+}
+
+/* Button */
 .toggle-btn {
-    background-color: #003366;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 20px;
-}
-
-.toggle-btn:hover {
-    background-color: #0055a5;
-}
-
-/* Collapsible panel */
-.donate-panel {
-    background-color: #f0f8ff; /* powder blue */
-    border-radius: 10px;
-    overflow: hidden;
-    max-height: 0; /* collapsed by default */
-    transition: max-height 0.4s ease;
-}
-
-/* Panel content */
-.account-details {
-    padding: 30px 20px;
-}
-
-.account-details p {
-    font-size: 1.1rem;
-    margin: 10px 0;
-}
-
-.account-details button {
-    background-color: #003366;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.account-details button:hover {
-    background-color: #0055a5;
-}
-
-.note {
-    font-size: 0.95rem;
     margin-top: 20px;
-    color: #333;
-}.donate-btn {
-/* ========================
-   FOOTER
-======================== */
-footer {
-    background-color: #e0f0ff;
-    text-align: center;
+    padding: 12px 20px;
+    background: #0d3b66;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Account Box */
+.account-box {
+    margin-top: 20px;
     padding: 20px;
-    color: #1a1a1a;
-    font-size: 0.9rem;
+    background: #f4f4f4;
+    border-radius: 10px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
 }
 
-/* ========================
-   RESPONSIVE DESIGN
-======================== */
+/* Footer */
+footer {
+    background: #0d3b66;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Mobile */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .hero h1 {
-        font-size: 2rem;
-    }
-
-    section {
-        padding: 40px 20px;
-    }
-}
-
-@media (max-width: 480px) {
     nav ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 5px;
     }
 
-    .hero h1 {
-        font-size: 1.5rem;
+    .hero {
+        background: #cfe8f7;
     }
-
 }
