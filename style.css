@@ -64,6 +64,19 @@ nav a {
     background: #ffffff;
 }
 
+/* Objectives List */
+.objectives {
+    list-style: none;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.objectives li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
 /* Button */
 .toggle-btn {
     margin-top: 20px;
@@ -87,6 +100,22 @@ nav a {
     display: none;
 }
 
+/* Social Links */
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: #0d3b66;
+    font-weight: bold;
+}
+
 /* Footer */
 footer {
     background: #0d3b66;
@@ -104,5 +133,10 @@ footer {
 
     .hero {
         background: #cfe8f7;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 10px;
     }
 }
