@@ -1,9 +1,12 @@
-function toggleAccount() {
-    const box = document.getElementById("account-details");
+const button = document.querySelector(".toggle-btn");
+const box = document.getElementById("account-details");
 
-    if (box.style.display === "block") {
-        box.style.display = "none";
+button.addEventListener("click", function () {
+    box.classList.toggle("show");
+
+    if (box.classList.contains("show")) {
+        button.textContent = "Hide Account Details";
     } else {
-        box.style.display = "block";
+        button.textContent = "Show Account Details";
     }
-}
+});
